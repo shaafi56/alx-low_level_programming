@@ -1,34 +1,29 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * _strcat - concatinate the values of two integers.
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
  *
- * @dest: arg a
- *
- * @src: arg b
- *
- * Return: void.
+ * Return: void
  */
-
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int i;
+	int j;
 
 	i = 0;
-
 	while (dest[i] != '\0')
 	{
 		i++;
 	}
-
 	j = 0;
-
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
 		j++;
 	}
+
 	dest[i] = '\0';
 	return (dest);
 }
